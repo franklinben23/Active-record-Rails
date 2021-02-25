@@ -12,7 +12,7 @@ The purpose of the project is to create models that allow users to submit posts 
 -rails generate model Comment(commenter: string content: string)
 ```
 * We run the migration command to create the actual table in the database
-rails `db:migrate`.
+`rails db:migrate`.
 * We used the rails console to insert and update the database.
 * We created instances of the *user*, *post*, and *comment* objects to manipulate the data in the database.
 * We checked for specific users using the `User.find(:id)` method, and we used `User.all` methods to retrieve all user data from the user table.
