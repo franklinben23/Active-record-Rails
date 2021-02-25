@@ -6,9 +6,11 @@ The purpose of the project is to create models that allow users to submit posts 
 ### Project implimentation steps
 * We use the `rails new micro-reddit` command to create our project.
 * We have created three models: 'User', 'Post', 'Comment' to interact with the database.
+```
 -rails generate model User(name: string email: string)
 -rails generate model Post(title: string :posts string)
 -rails generate model Comment(commenter: string content: string)
+```
 * We run the migration command to create the actual table in the database
 rails `db:migrate`.
 * We use the rails console to insert and update the database.
