@@ -1,24 +1,42 @@
-# README
+# Building a Micro-Reddit Project
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose of the project is to create models that allow users to submit posts and provide comments on links.
 
-Things you may want to cover:
+### Project implimentation steps
+1.We use the `rails new micro-reddit` command to create our project.
+2.We have created three models: 'User', 'Post', 'Comment' to interact with the database.
+    -rails generate model User(name: string email: string)
+    -rails generate model Post(title: string :posts string)
+    -rails generate model Comment(commenter: string content: string)
+3.We run the migration command to create the actual table in the database
+rails `db:migrate`.
+4.We use the rails console to insert and update the database.
+5.We have created instances of the *user*, *post*, and *comment* objects to manipulate the data in the database.
+6.We checked for specific users using the `User.find(:id)` method, and we used `User.all` methods to retrieve all user data from the user table.
+7.We added validations to check invalid input for the name, title, and the presence of the content.
 
-* Ruby version
 
-* System dependencies
+## Author
+**Franklin benjamin crisostomo de la rosa**
+- GitHub: [@franklinben23](https://github.com/franklinben23)
+- Twitter: [@frankli2302](https://twitter.com/Frankli2302)
 
-* Configuration
+**Mina**
 
-* Database creation
+- GitHub: [@Takhmina175](https://github.com/Takhmina175)
+- Twitter: [@Takhmin73630110](https://twitter.com/Takhmin73630110)
+- LinkedIn: [Takhmina Makhkamova](https://www.linkedin.com/in/takhmina-makhkamova-7628136b/)
 
-* Database initialization
+## Show your support
 
-* How to run the test suite
+Give a ⭐️ if you like this project!
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
+This project is [MIT](./LICENSE) licensed.
 
-* ...
+## Acknowledgements
+
+- [Microverse](https://microverse.org)
+
